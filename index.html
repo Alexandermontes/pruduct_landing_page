@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #header{
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            width: 100%;
+            height: 60px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            background-color: black;
+            position: fixed; /* para que la barra quede fina */
+        }
+        #header-img{
+            padding-right: 40px;
+            width: 50px;
+            height: 50px;
+        }
+        .nav-link{
+            text-align: right;
+            float: right ; 
+            margin-left: 50px;
+            list-style: none; 
+        }
+        .link{
+            font-family:Georgia, 'Times New Roman', Times, serif ;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;       
+        }
+        article{
+            padding-top: 70px   /* se debe dar un pading*/;
+        }
+        #form{
+            text-align: center;
+            padding: 50px;
+           
+        }
+        #servicios{
+            margin: auto;
+            width: 60%;
+            height: auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #video{
+            text-align: center;
+            padding: 50px;  
+        }
+        #proyectos {
+            width: 60%;
+            height: auto;
+            margin: auto;   
+            display: flex;
+            flex-direction: row;
+        }
+        .proy{
+            
+            margin: 1px;
+            padding-left: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .proy h3{
+            width: 100;
+            height: auto;
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            color: white;
+            padding-left: 3px;
+        }
+        footer{
+            
+            margin: auto;
+            width:60% ;
+            height: auto;
+            position: static;
+            color:darkgrey;
+            background-color: lightgray;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img src="img\carro ventas.jpg  " alt="carrito de compras" id="header-img" >
+        <h3>Automatizador Administrativo</h3>
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link"><a href="#servicios" class="link">Servicios</a></li>
+                <li class="nav-link"><a href="#video" class="link">Vdeos</a></li>
+                <li class="nav-link"><a href="#proyectos" class="link">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <section>
+            <form action="https://www.freecodecamp.com/email-submit " id="form">
+                <input type="email" name="" id="email" placeholder="Enter your e-mail address"><br>
+                <input type="submit" value="enviar" id="submit">
+            </form>
+        </section>
+        <section id="servicios">
+            <h2>SERVICIOS</h2>
+            <div id="doc">
+                <h3>Documentacion</h3>
+                <p>Crear el manual de procesos de la compañia permitiendo que la estandarizacion de las tareas por parte de los colaboradores sea concreta y precisa </p>
+
+            </div>
+            <div id="diag">
+                <h3>Diagramacion</h3>
+                <p>Creacion de diagramas de flujo del proceso haciendo uso de BPMN el cual permite que el diagrama de flujo pueda ser usado como una fuente para la automatizacion</p>
+
+            </div>
+            <div id="analis">
+                <h3>Analisis de procesos</h3>
+                <p>la identificacion de desperdicios en los procesos por medio del uso de herramientas estadisticas que permiten detectar las mayores fuentes de perdida</p>
+            </div>
+
+        </section>
+        <section id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DzNGYdYuEh4" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        </section>
+        <section id="proyectos" >
+            <div class="proy">
+                <h3>APP DE REGISTRO</h3>
+                <ul>
+                    <li>App android </li>
+                    <li>Automatizador de procesos</li>
+                    <li>Reduccion de costos</li>
+                    <li> <a href="https://automatizadoradministrativo.blogspot.com" target="_blank">visitar proyecto</a>  </li>
+                </ul>
+            </div>
+            <div class="proy">
+                <h3>TIENDA ONLINE </h3>
+                <ul>
+                    <li>Productos novedosos</li>
+                    <li>pagos por paypal</li>
+                    <li>entregas a toda la ciudad</li>
+                    <li><a href="https://sites.google.com/site/emprendimientodesdeelbarrio/feria-de-emprendimiento/tienda-virtual" target="_blank">visita el proyecto</a></li>
+                </ul>
+            </div>
+
+        </section>
+    </article>
+    <footer>
+        <h3>CONTACTENOS</h3>
+        <ul>
+            <li>telefono = +57 3014625372</li>
+            <li>correo = alexanderabella@gmail.com</li>
+            <li>ciudad = Bogotá D.C.</li>
+        </ul>
+
+    </footer>
+</body>
+</html>
